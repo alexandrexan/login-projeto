@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+:root {
+    --cor-1: #004E70;
+    --cor-2: #50183B;
+    --cor-3: #051A2F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(../imgs/fundo-login.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
