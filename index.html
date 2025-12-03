@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <main>
         <section class="login">
-            <div>
-
-            </div>
-            <div>
-                <h1>Login</h1>
+            <div class="formulario">
+                <h1>Tela de Login</h1>
                 <p>Por favor, insira suas credenciais para acessar sua conta.</p>
                 <form action="#" method="get">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required autocomplete="on" minlength="3">
+
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required minlength="5">
+
+                    <button type="submit">Entrar</button>
+                    <button type="reset">Resetar</button>
                     
                 </form>
             </div>
