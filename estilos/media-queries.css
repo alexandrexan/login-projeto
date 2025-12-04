@@ -1,23 +1,102 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 1194px) {
+/* *Small tablets / large phones */
+@media screen and (min-width: 600px) and (max-width: 767px) {
     .login {
-        width: 90vw;
-        padding: 40px 20px;
+        width: 85vw;
+        padding: 30px;
     }
-    button {
-        width: 14%;
-    }
+    .formulario { gap: 12px; }
+    
+    /* * Small tablets: botões ocupam toda largura, com padding confortável para toque */
+    form button { display: block; 
+        width: 100%; 
+        margin: 8px 0 0 0; 
+        padding: 10px; 
+        font-size: 15px; }
 }
-@media screen and (min-width: 1195px) and (max-width: 1200px) {
+
+/* * Tablets (portrait and small landscape) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .login {
-        width: 90vw;
-        padding: 40px 120px;
+        width: 80vw;
+        padding: 40px 40px;
     }
+    
+    /* * Tablets (inclui ~768px): botões menores, ainda fáceis de usar */
+    form button { display: block; 
+        width: 100%; 
+        margin-top: 8px; 
+        padding: 9px; 
+        font-size: 14px; }
 }
-@media screen and (min-width: 1200px) {
+
+/* *Specific range requested: make buttons stack here (tablets / small desktops) */
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+    .login {
+        width: 70vw;
+        padding: 40px 60px;
+    }
+    .formulario { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 12px; }
+    
+        /* * Small desktops: empilhar botões, manter tamanho contido */
+    form button { display: block; 
+        width: 100%; 
+        margin-top: 8px; 
+        padding: 9px; 
+        font-size: 14px; }
+}
+
+/* * Desktop / Full HD */
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
     .login {
         width: 900px;
         padding: 40px 130px;
+    }
+    /* * Desktop / Full HD: botões lado a lado, tamanho moderado */
+    form button { 
+        display: inline-block; 
+        width: auto; 
+        margin: 20px 10px 0 0; 
+        padding: 10px 12px; 
+        font-size: 16px; }
+}
+
+/* * 2K screens */
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+    .login {
+        width: 1000px;
+        padding: 45px 160px;
+    }
+    form button { 
+        font-size: 18px; 
+        padding: 12px 14px; 
+    }
+}
+
+/* * Large desktop / 2.5K to just before 4K */
+@media screen and (min-width: 2560px) and (max-width: 3839px) {
+    .login {
+        width: 1100px;
+        padding: 50px 180px;
+    }
+    form button { 
+        font-size: 18px; 
+        padding: 14px 16px; 
+    }
+}
+
+/* * 4K and larger (TVs 50/55" 4K, etc.) */
+@media screen and (min-width: 3840px) {
+    .login {
+        width: 1200px;
+        padding: 60px 200px;
+    }
+    form button { 
+        font-size: 20px; 
+        padding: 16px 18px; 
     }
 }

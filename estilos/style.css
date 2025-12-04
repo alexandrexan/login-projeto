@@ -52,20 +52,20 @@ p {
 }
 
 .formulario {
-    display: block;
+    display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
 button {
-    padding: 10px;
-    margin: 30px 10px 0 0;
+    padding: 8px 10px;
+    margin: 12px 10px 0 0;
     border: none;
     border-radius: 5px;
-    background: var(--cor-1);
+    background: var(--cor-2);
     color: #fff;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     transition: background 0.3s ease;
 }
 
@@ -81,4 +81,11 @@ input {
     margin: 5px 0;
     background: var(--cor-1);
     color: #fff;
+}
+
+/* *Garantir que labels e inputs fiquem em bloco e ocupem 100% da largura para manter a ordem (Usuário -> Senha -> Botões) em todas as telas */
+form label,
+form input {
+    display: block;
+    width: 100%;
 }
