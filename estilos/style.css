@@ -58,14 +58,14 @@ p {
 }
 
 button {
-    padding: 8px 10px;
-    margin: 12px 10px 0 0;
+    padding: 10px 12px;
+    margin: 20px 10px 0 0;
     border: none;
     border-radius: 5px;
-    background: var(--cor-2);
+    background: var(--cor-1);
     color: #fff;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 16px;
     transition: background 0.3s ease;
 }
 
@@ -79,7 +79,7 @@ input {
     border-radius: 5px;
     font-size: 16px;
     margin: 5px 0;
-    background: var(--cor-1);
+    background: var(--cor-3);
     color: #fff;
 }
 
