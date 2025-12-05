@@ -13,14 +13,17 @@
         <section class="login">
             <div class="formulario">
                 <h1>Tela de Login</h1>
+                
                 <p>Por favor, insira suas credenciais para acessar sua conta.</p>
+                
                 <form action="#" method="get">
-                    <label for="username">Usuário:</label>
-                    <input type="text" id="username" name="username" autocomplete="on">
-
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password">
-
+                    
+                    <label for="username" class="label user-label">Usuário:</label>
+                    <input type="text" id="username" name="username" autocomplete="username" placeholder="Seu usuário">
+                    
+                    <label for="password" class="label pass-label">Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="Sua senha" autocomplete="current-password" >
+                    
                     <button type="submit">Entrar</button>
                     <button type="reset">Resetar</button>
                     
@@ -28,5 +31,8 @@
             </div>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2025 Tela de Login. Feito por <a href="https://github.com/alexandrexan" target="_blank">Alexandre (Xan)</a></p>
+    </footer>
 </body>
 </html>

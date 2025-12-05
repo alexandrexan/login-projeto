@@ -6,7 +6,15 @@
         width: 85vw;
         padding: 30px;
     }
-    .formulario { gap: 12px; }
+    .formulario { 
+        gap: 12px; 
+    }
+    footer { 
+        padding: 12px 15px; 
+        font-size: 13px; 
+    }
+    /* emoji sizes */
+    form label.label::before { font-size: 16px; }
 }
 
 /* * Tablets (portrait and small landscape) */
@@ -15,6 +23,11 @@
         width: 80vw;
         padding: 40px 40px;
     }
+    footer { 
+        padding: 14px 20px; 
+        font-size: 14px; 
+    }
+    form label.label::before { font-size: 18px; }
 }
 
 /* *Specific range requested: make buttons stack here (tablets / small desktops) */
@@ -26,7 +39,13 @@
     .formulario { 
         display: flex; 
         flex-direction: column; 
-        gap: 12px; }
+        gap: 12px; 
+    }
+    footer { 
+        padding: 15px 25px; 
+        font-size: 15px; 
+    }
+    form label.label::before { font-size: 18px; }
 }
 
 /* * Desktop / Full HD */
@@ -35,6 +54,11 @@
         width: 900px;
         padding: 40px 130px;
     }
+    footer { 
+        padding: 15px 30px; 
+        font-size: 15px; 
+    }
+    form label.label::before { font-size: 20px; }
 }
 
 /* * 2K screens */
@@ -43,6 +67,11 @@
         width: 1000px;
         padding: 45px 160px;
     }
+    footer { 
+        padding: 16px 35px; 
+        font-size: 16px; 
+    }
+    form label.label::before { font-size: 22px; }
 }
 
 /* * Large desktop / 2.5K to just before 4K */
@@ -51,6 +80,11 @@
         width: 1100px;
         padding: 50px 180px;
     }
+    footer { 
+        padding: 18px 40px; 
+        font-size: 16px; 
+    }
+    form label.label::before { font-size: 24px; }
 }
 
 /* * 4K and larger (TVs 50/55" 4K, etc.) */
@@ -89,4 +123,12 @@
         padding: 14px 20px; 
         border-radius: 6px; 
     }
+    
+    /* * Footer responsivo para TVs */
+    footer { 
+        padding: 20px 50px; 
+        font-size: 18px; 
+    }
+    /* Emoji maior para TVs */
+    form label.label::before { font-size: 28px; }
 }
