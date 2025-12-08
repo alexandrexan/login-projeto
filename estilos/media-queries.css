@@ -13,7 +13,7 @@
         padding: 12px 15px; 
         font-size: 13px; 
     }
-    /* emoji sizes */
+    /** emoji sizes */
     form label.label::before { font-size: 16px; }
 }
 
@@ -45,7 +45,9 @@
         padding: 15px 25px; 
         font-size: 15px; 
     }
-    form label.label::before { font-size: 18px; }
+    form label.label::before { 
+        font-size: 18px; 
+    }
 }
 
 /* * Desktop / Full HD */
@@ -58,7 +60,9 @@
         padding: 15px 30px; 
         font-size: 15px; 
     }
-    form label.label::before { font-size: 20px; }
+    form label.label::before { 
+        font-size: 20px; 
+    }
 }
 
 /* * 2K screens */
@@ -71,7 +75,9 @@
         padding: 16px 35px; 
         font-size: 16px; 
     }
-    form label.label::before { font-size: 22px; }
+    form label.label::before { 
+        font-size: 22px; 
+    }
 }
 
 /* * Large desktop / 2.5K to just before 4K */
@@ -84,7 +90,9 @@
         padding: 18px 40px; 
         font-size: 16px; 
     }
-    form label.label::before { font-size: 24px; }
+    form label.label::before { 
+        font-size: 24px; 
+    }
 }
 
 /* * 4K and larger (TVs 50/55" 4K, etc.) */
@@ -130,5 +138,7 @@
         font-size: 18px; 
     }
     /* Emoji maior para TVs */
-    form label.label::before { font-size: 28px; }
+    form label.label::before { 
+        font-size: 28px; 
+    }
 }
