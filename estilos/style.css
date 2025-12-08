@@ -54,7 +54,7 @@ main p {
     gap: 15px;
 }
 
-button {
+form button {
     padding: 10px 12px;
     margin: 20px 10px 0 0;
     border: none;
@@ -66,11 +66,11 @@ button {
     transition: background 0.3s ease;
 }
 
-button:hover {
+form button:hover {
     background: var(--cor-2);
 }
 
-input {
+form input {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -88,7 +88,7 @@ form input {
     width: 100%;
 }
 
-/* Labels com emoji (apenas emoji, sem imagens) */
+/* * Labels com emoji (apenas emoji, sem imagens) */
 form label.label {
     display: block;
     font-weight: 600;
@@ -100,7 +100,6 @@ form label.label::before {
     vertical-align: middle;
     line-height: 1;
     font-size: 18px; /* base - ajustado por media queries */
-    color: var(--icon-color);
     opacity: 0.95;
     transition: color 0.2s ease, opacity 0.2s ease;
 }
